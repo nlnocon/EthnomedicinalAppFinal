@@ -1,0 +1,26 @@
+<resources>
+    <color name="dark_green">#CC498C68</color>
+    <color name="light_green">#76DD94</color>
+    <color name="cream">#FBFAF5</color>
+    <color name="cream2">#CCFBFAF5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F0F1F0</color>
+    <color name="dark_gray">#878585</color>
+    <color name="transparent">#00000000</color>
+    <string name="app_name">ICEP</string>
+    <string name="ethnomedicinal_app">Ethnomedicinal App</string>
+    <string name="menu">Menu</string>
+    <string name="plants_home">plants_home</string>
+    <string name="title_activity_filter_panel">filter_panel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

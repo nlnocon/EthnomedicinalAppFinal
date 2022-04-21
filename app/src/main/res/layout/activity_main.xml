@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cream"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="0dp"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/plantListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="175dp"/>
+
+    <RelativeLayout
+        android:id="@+id/frame_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:background="@drawable/gradient1">
+
+        <TextView
+            android:id="@+id/titleLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Library"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <SearchView
+            android:id="@+id/plantListSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/titleLibrary"
+            android:background="@drawable/white_bubble"
+            android:iconifiedByDefault="false"
+            android:inputType="text"
+            android:queryHint="Search Plants"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filter_outline"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/plantListSearchView"
+            android:layout_marginTop="15dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/plantListSearchView"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="45dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:id="@+id/leavesFilterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/filter_button_toggle"
+                    android:textOff="Leaves"
+                    android:textOn="Leaves"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginLeft="10dp" />
+
+                <ToggleButton
+                    android:id="@+id/stemsFilterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/filter_button_toggle"
+                    android:textOff="Stems"
+                    android:textOn="Stems"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_toRightOf="@+id/leavesFilterButton"
+                    android:layout_marginLeft="10dp" />
+
+                <ToggleButton
+                    android:id="@+id/flowersFilterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/filter_button_toggle"
+                    android:textOff="Flowers"
+                    android:textOn="Flowers"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_toRightOf="@+id/stemsFilterButton"
+                    android:layout_marginLeft="10dp"/>
+
+                <ToggleButton
+                    android:id="@+id/rootsFilterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/filter_button_toggle"
+                    android:textOff="Roots"
+                    android:textOn="Roots"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_toRightOf="@+id/flowersFilterButton"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/green_bubble"
+            android:drawableTop="@drawable/camera_outline"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingTop="15dp"
+            android:textColor="@color/cream" />
+
+    </FrameLayout>
+
+</RelativeLayout>
